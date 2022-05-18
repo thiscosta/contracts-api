@@ -1,7 +1,7 @@
 import express from "express";
 import { JobController } from "../controllers/jobs.controller";
 
-import { getProfile } from "../middleware/getProfile";
+import { getProfile } from "../middleware/get-profile";
 
 const jobController = new JobController();
 

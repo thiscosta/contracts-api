@@ -1,7 +1,7 @@
 import express from "express";
 
 import { ContractController } from "../controllers/contract.controller";
-import { getProfile } from "../middleware/getProfile";
+import { getProfile } from "../middleware/get-profile";
 
 const contractController = new ContractController();
 

@@ -1,5 +1,6 @@
-import { Contract, Job } from "../../../model";
+import { Sequelize } from "sequelize/types";
+import {  Job } from "../../../model";
 
 export interface PayJobUseCase {
-    payJob(jobId: string, profileId: string, jobModel: any): Promise<Job[]>;
+    payJob(jobId: string, profileId: string, jobModel: any, profileModel: any, sequelize: Sequelize): Promise<Job[]>;
 }

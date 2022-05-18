@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import sequelize from "sequelize";
-import { Contract } from "../model";
 import { GetContractUseCase } from "../usecases/contract/get-contract/get-contract.usecase";
 import { GetContractUseCaseImpl } from "../usecases/contract/get-contract/get-contract.usecase.impl";
 
