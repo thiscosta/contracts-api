@@ -9,7 +9,11 @@ export class BalancesController {
     this.depositForUser = this.depositForUser.bind(this);
   }
 
-  async depositForUser(req: Request, res: Response, next: NextFunction): Promise<any> {
+  async depositForUser(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<any> {
     try {
       const { Job, Profile } = req.app.get("models");
       const profile = await this.depositUseCase.depositForUser(
